@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: #f5f8fb;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    */
+}
+
+.mySlides1,
+.mySlides2 {
+    display: none;
+
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 1);
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* beautification */
+
+.event {
+    /* background-color: bisque; */
+    max-width: 80%;
+    margin: 4em auto;
+
+
+}
+
+/* .event:nth-child(even) {
+    background-color: red;
+} */
+
+.event-title {
+    border-left: 0.3em solid #7f66ff;
+    padding-left: 1em;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* .slideshow-container>div {
+    max-height: 80vh;
+} */
+
+@media screen and (max-width:750px) {
+    .slideshow-container {
+        max-width: none;
+    }
+
+    .event {
+        max-width: none;
+    }
+}
